@@ -2,7 +2,7 @@
   "name": "yr-cli",
   "description": "yr.no weather forecast CLI",
   "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "repository": {
     "type": "git",
     "url": "clux/yr-cli"
