@@ -4,7 +4,7 @@
 [![dependency status](https://david-dm.org/clux/yr-cli.svg)](https://david-dm.org/clux/yr-cli)
 [![coverage status](http://img.shields.io/coveralls/clux/yr-cli.svg)](https://coveralls.io/r/clux/yr-cli)
 
-Terminal json weather reports via the [weather api](http://api.met.no/weatherapi/locationforecast/1.9/documentation) from [yr.no](https://www.yr.no).
+Terminal json weather reports via the [weather api](http://api.met.no/weatherapi/locationforecast/1.9/documentation) from [yr.no](http://www.yr.no).
 
 ## Usage
 Create your `.yrcli.json` containing your location like in the [example](./.yrcli.json)
