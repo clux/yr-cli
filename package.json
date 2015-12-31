@@ -20,6 +20,8 @@
   "dependencies": {
     "co": "^4.6.0",
     "confortable": "^1.0.0",
+    "hash-object": "^0.1.7",
+    "memoize-fs": "^1.0.4",
     "yargs": "^3.31.0",
     "yr.no-forecast": "0.0.7"
   },
