@@ -1,4 +1,4 @@
-0.1.1-0.1.4 / 2016-01-01
+0.1.1-0.1.5 / 2016-01-01
 ===================
   * Added manpage
   * Prettify output by default
