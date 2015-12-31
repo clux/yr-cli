@@ -1,0 +1,64 @@
+.TH "YR" "1" "January 2016" "" ""
+.SH "NAME"
+\fByr\fR
+.P
+Return a local weather forecast using the weather api from yr\.no
+.SH SYNOPSIS
+.P
+\fByr [OPTION]\.\.\.\fP
+.SH DESCRIPTION
+.P
+Fetches a weather forecast for a location specified in \fB\|\.yrcli\.json\fP in, or above the current directory\. Requests are cached for 10 minutes\.
+.SH OPTIONS
+.P
+\fB\-h hour\fP      Specific hour for the forecast in 24 hour format
+.P
+\fB\-d offset\fP    Offset forecast by d days
+.P
+\fB\-f\fP           Return a 5 day forecast
+.SH OUTPUT
+.P
+The output format is in the following \fBJSON\fP format:
+.P
+.RS 2
+.nf
+{
+  "from": "2015\-12\-31T15:00:00Z",
+  "to": "2015\-12\-31T16:00:00Z",
+  "rain": 0\.7,        // millimeters
+  "cloudiness": 100,  // percent
+  "humidity": 95\.5,   // percent
+  "temperature": 4\.1, // celcius
+  "wind": {
+    "speed": 5\.2,     // meters per second
+    "direction": 181  // degrees in direction of compass, e\.g\. 180 is straight south\.
+  }
+}
+.fi
+.RE
+.P
+When the five day forecast is requested, the output is an array of above objects\.
+.SH CONFIG
+.P
+A valid config can be placed in \fB~/\.yrcli\.json\fP
+.P
+.RS 2
+.nf
+{
+  "location": {
+    // london
+    "lat": 51\.5072,
+    "lon": 0\.1275
+  },
+  "cacheFile": "~/\.yrdata\.json"
+}
+.fi
+.RE
+.SH INSTALLATION
+.P
+Install globally through npm
+.P
+\fBnpm install \-g yr\-cli\fP
+.SH BUGS
+.P
+Please report bugs at \fIhttps://github\.com/clux/yr\-cli/issues\fR

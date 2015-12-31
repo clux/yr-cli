@@ -12,10 +12,12 @@
     "yr": "bin.js"
   },
   "main": "lib",
+  "man": "yr.1",
   "scripts": {
     "test": "bndg test/*.test.js",
     "precoverage": "istanbul cover bndg test/*.test.js",
-    "coverage": "cat coverage/lcov.info && rm -rf coverage"
+    "coverage": "cat coverage/lcov.info && rm -rf coverage",
+    "man": "marked-man manpage.md -o yr.1"
   },
   "dependencies": {
     "co": "^4.6.0",
