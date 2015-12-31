@@ -42,13 +42,14 @@ A valid config can be placed in `~/.yrcli.json`
 ```
 {
   "location": {
-    // london
     "lat": 51.5072,
     "lon": 0.1275
   },
   "cacheFile": "~/.yrdata.json"
 }
 ```
+
+This would return weather forecasts for London, UK.
 
 ## INSTALLATION
 Install globally through npm
