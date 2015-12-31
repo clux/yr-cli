@@ -36,7 +36,7 @@ var cache = require(cfg.cacheFile);
 
 require('co')(function *() {
   var data = yield yr(argv, cfg, cache);
-  console.log(JSON.stringify(data));
+  console.log(JSON.stringify(data, null, 2));
   fs.writeFileSync(cfg.cacheFile, JSON.stringify(cache, null, 2)); // update cache
 }).catch((err) => {
   console.error(err);
