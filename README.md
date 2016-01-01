@@ -44,7 +44,7 @@ Here is an example output object annotated with the standard metric units (becau
 The dates are UTC JSON date strings you can `Date.parse()`.
 
 ## Caching
-In accordance with yr.no usage policies, data is cached for 10 minutes in the `cacheFile` specified in your config (which must be a `.json` file).
+In accordance with yr.no usage policies, data is cached for 10 minutes in the `cacheFile` specified in your config.
 
 ## Installation
 
