@@ -1,7 +1,7 @@
 {
   "name": "yr-cli",
   "description": "yr.no weather forecast CLI",
-  "author": "Eirik Albrigtsen <analsandblaster@gmail.com>",
+  "author": "Eirik Albrigtsen <sszynrae@gmail.com>",
   "version": "0.1.6",
   "repository": {
     "type": "git",
